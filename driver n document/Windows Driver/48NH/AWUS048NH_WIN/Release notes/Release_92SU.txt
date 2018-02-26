@@ -1,0 +1,75 @@
+/*****************************************************************************
+ *	Copyright(c) 2008,  RealTEK Technology Inc. All Right Reserved.
+ *  
+ *	Realtek RTL8192S USB 802.11B/G/N 300M Wireless NIC Release Note. 
+ *	
+ *	Description:	
+ *					N.VVVV.DDDD.YYYY
+ *					N		-	NDIS number
+ *					VVVV	-	Version	1001	-->
+ *					DDDD	-	Data	10/19	-->
+ *					YYYY	-	Year	2007	-->	
+ * 
+ *****************************************************************************/
+
+----------------------------------------------------------------------------
+	Version:		5.101 Seires		
+	
+	Reason:			1. Enhance Throughput
+				2. Revise HW related configuration for improvement.
+				3. Modify POS for system suspend/resume.
+				4. Revise EEPROM related settings.
+----------------------------------------------------------------------------
+	Version:		5.102 Series
+	
+	Reason:			1. Revise E-Fuse related settings.
+				2. Revise HW related parameter configurations.
+				3. Fix endurance fail issue.
+----------------------------------------------------------------------------
+	Version:		5.103 Series
+	
+	Reason:			1. Improve throughput stability.
+----------------------------------------------------------------------------
+	Version:		5.1040
+	
+	Reason:			1. Improve IOT issue.
+----------------------------------------------------------------------------
+	Version:		5.1050
+	
+	Reason:			1. Improve throughput issue.
+----------------------------------------------------------------------------
+	Version:		5.1081
+	
+	Reason:			1. Improve throughput and DM related issue.
+----------------------------------------------------------------------------
+	Version:		5.1082
+	
+	Reason:			1. Support Win7
+----------------------------------------------------------------------------
+	Version:		1085.2
+	
+	Reason:			1. Improve Win7 2 port Virtual Wifi capability.
+----------------------------------------------------------------------------
+	Version:		1085.7
+	
+	Reason:			1. Improve Win7 extension port SoftAP stability.
+				2. Imrove IOT issue.
+				3. Improve PSPXlink performance.
+----------------------------------------------------------------------------
+	Version:		1086.0
+	
+	Reason:			1. Add Russia sku configuration.
+				2. Imrove Win7 SoftAP connectivity and stability.
+----------------------------------------------------------------------------
+	Version:		1086.7
+	
+	Reason:			1. Add Tx Power adjustment.
+				2. Imrove Mobility center control.
+----------------------------------------------------------------------------
+	Version:		1086.10
+	
+	Reason:			1. Fine tune to pass WHQL WLK 1.5.
+				2. Improve the stability for Tx long run.
+				3. Improve noise environment throughput.
+				4. Improve S3 long run stability.
+----------------------------------------------------------------------------

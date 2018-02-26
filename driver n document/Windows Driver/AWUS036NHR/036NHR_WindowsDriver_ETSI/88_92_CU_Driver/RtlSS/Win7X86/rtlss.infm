@@ -1,0 +1,249 @@
+;/*++
+;
+; Realtek Wireless 802.11b/g/n USB 2.0 Network Adapter Selective Suspend Enabler
+; 
+; Copyright (C) 2010 Realtek Semiconductor Corp.
+;
+; Module Name:
+;
+;    rtlss.INF
+;
+; Abstract:
+;    INF for installing selective suspend enabler
+;
+;--*/
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=USB
+ClassGUID={36fc9e60-c465-11cf-8056-444553540000} 
+Provider=%MfgName%
+CatalogFile.NT	= rtlss.cat		;; for WHQL certified
+DriverVer=11/16/2010,6.1.7600.16385
+
+; ================= Class section =====================
+
+[ClassInstall32]
+Addreg=USBClassReg     
+
+[USBClassReg]
+HKR,,,0,%ClassName%
+HKR,,Icon,,-5
+
+; ================= Device section =====================
+
+[Manufacturer]
+%MfgName%=Microsoft,NTx86
+
+; For Win2K
+[Microsoft]
+%RTL8188SU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_8171&REV_0200
+%RTL8188SU.DeviceDesc%=rtlss.Dev, USB\VID_1690&PID_0752&REV_0200
+%RTL8191SU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_8172&REV_0200
+%RTL8191SU.DeviceDesc%=rtlss.Dev, USB\VID_13D3&PID_3309
+%RTL8191SU.DeviceDesc%=rtlss.Dev, USB\VID_13D3&PID_3339
+%RTL8191SU.DeviceDesc%=rtlss.Dev, USB\VID_13D3&PID_3340
+%RTL8191SU.DeviceDesc%=rtlss.Dev, USB\VID_13D3&PID_3341
+%RTL8192GU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_8173&REV_0200
+%RTL8192SU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_8174&REV_0200
+; Add CU series UPDATE TO DID table V38
+; 8188CUS
+%RTL8188CU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_8176&REV_0200
+%RTL8188CU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_8176
+%RTL8188CU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_8177&REV_0200
+%RTL8188CU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_8177
+%RTL8188CU.DeviceDesc%=rtlss.Dev, USB\VID_2019&PID_ED17
+%RTL8188CU.DeviceDesc%=rtlss.Dev, USB\VID_0DF6&PID_0052
+%RTL8188CU.DeviceDesc%=rtlss.Dev, USB\VID_7392&PID_7811
+%RTL8188CU.DeviceDesc%=rtlss.Dev, USB\VID_07B8&PID_8189
+%RTL8188CU.DeviceDesc%=rtlss.Dev, USB\VID_0EB0&PID_9071
+%RTL8188CU.DeviceDesc%=rtlss.Dev, USB\VID_06F8&PID_E033
+%RTL8188CU.DeviceDesc%=rtlss.Dev, USB\VID_103C&PID_1629
+%RTL8188CU.DeviceDesc%=rtlss.Dev, USB\VID_2001&PID_3308
+%RTL8188CU.DeviceDesc%=rtlss.Dev, USB\VID_050D&PID_1102
+%RTL8188CU.DeviceDesc%=rtlss.Dev, USB\VID_2019&PID_AB2A
+%RTL8188CU.DeviceDesc%=rtlss.Dev, USB\VID_20F4&PID_648B
+%RTL8188CU.DeviceDesc%=rtlss.Dev, USB\VID_4855&PID_0090
+;8192 CU
+%RTL8192CU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_8178&REV_0200
+%RTL8192CU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_8178
+%RTL8192CU.DeviceDesc%=rtlss.Dev, USB\VID_2001&PID_3307
+%RTL8192CU.DeviceDesc%=rtlss.Dev, USB\VID_2001&PID_330A
+%RTL8192CU.DeviceDesc%=rtlss.Dev, USB\VID_2001&PID_3309
+%RTL8192CU.DeviceDesc%=rtlss.Dev, USB\VID_0586&PID_341F
+%RTL8192CU.DeviceDesc%=rtlss.Dev, USB\VID_7392&PID_7822
+%RTL8192CU.DeviceDesc%=rtlss.Dev, USB\VID_2019&PID_AB2B
+%RTL8192CU.DeviceDesc%=rtlss.Dev, USB\VID_07B8&PID_8178
+%RTL8192CU.DeviceDesc%=rtlss.Dev, USB\VID_07AA&PID_0056
+%RTL8192CU.DeviceDesc%=rtlss.Dev, USB\VID_4855&PID_0091
+;8188 RU
+%RTL8188RU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_817D&REV_0200
+%RTL8188RU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_817D
+; 8188CE_VAU
+%RTL8188CE_VAU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_8170&REV_0200
+%RTL8188CE_VAU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_8170
+%RTL8188CE_VAU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_817E&REV_0200
+%RTL8188CE_VAU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_817E
+%RTL8188CE_VAU.DeviceDesc%=rtlss.Dev, USB\VID_13D3&PID_3359
+%RTL8188CE_VAU.DeviceDesc%=rtlss.Dev, USB\VID_13D3&PID_3358
+; 8192CE_VAU
+%RTL8192CE_VAU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_817C&REV_0200
+%RTL8192CE_VAU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_817C
+; 8188CUS-Slim Solo
+%RTL8188CU_Slim_Solo.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_817A&REV_0200
+%RTL8188CU_Slim_Solo.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_817A
+; 8188CUS-Slim Combo
+%RTL8188CU_Slim_Combo.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_817B&REV_0200
+%RTL8188CU_Slim_Combo.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_817B
+; Add other product in the future
+%RTL8192CU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_8192
+
+; For XP and later
+[Microsoft.NTx86]
+%RTL8188SU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_8171&REV_0200
+%RTL8188SU.DeviceDesc%=rtlss.Dev, USB\VID_1690&PID_0752&REV_0200
+%RTL8191SU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_8172&REV_0200
+%RTL8191SU.DeviceDesc%=rtlss.Dev, USB\VID_13D3&PID_3309
+%RTL8191SU.DeviceDesc%=rtlss.Dev, USB\VID_13D3&PID_3339
+%RTL8191SU.DeviceDesc%=rtlss.Dev, USB\VID_13D3&PID_3340
+%RTL8191SU.DeviceDesc%=rtlss.Dev, USB\VID_13D3&PID_3341
+%RTL8192GU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_8173&REV_0200
+%RTL8192SU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_8174&REV_0200
+; Add CU series UPDATE TO DID table V38
+; 8188CUS
+%RTL8188CU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_8176&REV_0200
+%RTL8188CU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_8176
+%RTL8188CU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_8177&REV_0200
+%RTL8188CU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_8177
+%RTL8188CU.DeviceDesc%=rtlss.Dev, USB\VID_2019&PID_ED17
+%RTL8188CU.DeviceDesc%=rtlss.Dev, USB\VID_0DF6&PID_0052
+%RTL8188CU.DeviceDesc%=rtlss.Dev, USB\VID_7392&PID_7811
+%RTL8188CU.DeviceDesc%=rtlss.Dev, USB\VID_07B8&PID_8189
+%RTL8188CU.DeviceDesc%=rtlss.Dev, USB\VID_0EB0&PID_9071
+%RTL8188CU.DeviceDesc%=rtlss.Dev, USB\VID_06F8&PID_E033
+%RTL8188CU.DeviceDesc%=rtlss.Dev, USB\VID_103C&PID_1629
+%RTL8188CU.DeviceDesc%=rtlss.Dev, USB\VID_2001&PID_3308
+%RTL8188CU.DeviceDesc%=rtlss.Dev, USB\VID_050D&PID_1102
+%RTL8188CU.DeviceDesc%=rtlss.Dev, USB\VID_2019&PID_AB2A
+%RTL8188CU.DeviceDesc%=rtlss.Dev, USB\VID_20F4&PID_648B
+%RTL8188CU.DeviceDesc%=rtlss.Dev, USB\VID_4855&PID_0090
+;8192 CU
+%RTL8192CU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_8178&REV_0200
+%RTL8192CU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_8178
+%RTL8192CU.DeviceDesc%=rtlss.Dev, USB\VID_2001&PID_3307
+%RTL8192CU.DeviceDesc%=rtlss.Dev, USB\VID_2001&PID_330A
+%RTL8192CU.DeviceDesc%=rtlss.Dev, USB\VID_2001&PID_3309
+%RTL8192CU.DeviceDesc%=rtlss.Dev, USB\VID_0586&PID_341F
+%RTL8192CU.DeviceDesc%=rtlss.Dev, USB\VID_7392&PID_7822
+%RTL8192CU.DeviceDesc%=rtlss.Dev, USB\VID_2019&PID_AB2B
+%RTL8192CU.DeviceDesc%=rtlss.Dev, USB\VID_07B8&PID_8178
+%RTL8192CU.DeviceDesc%=rtlss.Dev, USB\VID_07AA&PID_0056
+%RTL8192CU.DeviceDesc%=rtlss.Dev, USB\VID_4855&PID_0091
+;8188 RU
+%RTL8188RU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_817D&REV_0200
+%RTL8188RU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_817D
+; 8188CE_VAU
+%RTL8188CE_VAU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_8170&REV_0200
+%RTL8188CE_VAU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_8170
+%RTL8188CE_VAU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_817E&REV_0200
+%RTL8188CE_VAU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_817E
+%RTL8188CE_VAU.DeviceDesc%=rtlss.Dev, USB\VID_13D3&PID_3359
+%RTL8188CE_VAU.DeviceDesc%=rtlss.Dev, USB\VID_13D3&PID_3358
+; 8192CE_VAU
+%RTL8192CE_VAU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_817C&REV_0200
+%RTL8192CE_VAU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_817C
+; 8188CUS-Slim Solo
+%RTL8188CU_Slim_Solo.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_817A&REV_0200
+%RTL8188CU_Slim_Solo.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_817A
+; 8188CUS-Slim Combo
+%RTL8188CU_Slim_Combo.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_817B&REV_0200
+%RTL8188CU_Slim_Combo.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_817B
+; Add other product in the future
+%RTL8192CU.DeviceDesc%=rtlss.Dev, USB\VID_0BDA&PID_8192
+
+
+
+; ============== Sections for RT SSNDIS Device ===========
+[rtlss.Dev.NT]
+CopyFiles=rtlss.Files.Ext
+
+[rtlss.Dev.NT.HW]
+AddReg = Enum_UpperFilter_Reg, SS_Reg
+
+[Enum_UpperFilter_Reg]
+HKR, ,  UpperFilters,  0x00010000, "rtlss"
+
+[SS_Reg]
+HKR,,"DefaultIdleTimeout",0x00010001,3000
+
+[rtlss.Dev.NT.Services]
+Addservice = rtlss, %SPSVCINST_ASSOCSERVICE%, rtlss.AddService
+
+
+[rtlss.AddService]
+DisplayName    = %rtlss.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\rtlss.sys
+LoadOrderGroup = Base
+
+[rtlss.Files.Ext]
+rtlss.sys
+
+[SourceDisksNames]
+1=%Disk_Description%,,,
+
+[SourceDisksFiles]
+rtlss.sys = 1
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+[rtlss.Dev.NT.Remove.Services]
+DelService = rtlss, 0x200
+
+;-------------- WDF Coinstaller installation
+
+[DestinationDirs]
+CoInstaller_CopyFiles = 11
+
+[osrusbfx2.Dev.NT.CoInstallers]
+AddReg=CoInstaller_AddReg
+CopyFiles=CoInstaller_CopyFiles
+
+[CoInstaller_CopyFiles]
+WdfCoInstaller01009.dll
+
+[SourceDisksFiles]
+WdfCoInstaller01009.dll=1 ; make sure the number matches with SourceDisksNames
+
+[CoInstaller_AddReg]
+HKR,,CoInstallers32,0x00010000, "WdfCoInstaller01009.dll,WdfCoInstaller"
+
+[osrusbfx2.Dev.NT.Wdf]
+KmdfService = osrusbfx2, osrusbfx2_wdfsect
+[osrusbfx2_wdfsect]
+KmdfLibraryVersion = 1.9
+
+;---------------------------------------------------------------;
+
+[Strings]
+MfgName="Realtek"
+Disk_Description="Installation Disk"
+ClassName="USB Device"
+SPSVCINST_ASSOCSERVICE= 0x00000002
+RTL8188SU.DeviceDesc="Realtek RTL8188SU Selective Suspend Enabler"
+RTL8191SU.DeviceDesc="Realtek RTL8191SU Selective Suspend Enabler"
+RTL8192GU.DeviceDesc="Realtek RTL8192GU Selective Suspend Enabler"
+RTL8192SU.DeviceDesc="Realtek RTL8192SU Selective Suspend Enabler"
+RTL8188CU.DeviceDesc="Realtek RTL8188CU Selective Suspend Enabler"
+RTL8192CU.DeviceDesc="Realtek RTL8192CU Selective Suspend Enabler"
+RTL8188RU.DeviceDesc="Realtek RTL8188RU Selective Suspend Enabler"
+RTL8188CE_VAU.DeviceDesc="Realtek RTL8188CE_VAU Selective Suspend Enabler"
+RTL8192CE_VAU.DeviceDesc="Realtek RTL8192CE_VAU Selective Suspend Enabler"
+RTL8188CU_Slim_Solo.DeviceDesc="Realtek RTL8188 Slim Solo_VAU Selective Suspend Enabler"
+RTL8188CU_Slim_Combo.DeviceDesc="Realtek RTL8188 Slim Combo_VAU Selective Suspend Enabler"
+rtlss.SvcDesc="Service for enabling selective suspend to RTL device"
+
+

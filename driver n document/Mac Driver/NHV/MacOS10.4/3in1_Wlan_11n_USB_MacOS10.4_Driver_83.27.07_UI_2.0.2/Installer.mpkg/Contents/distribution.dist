@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<installer-script minSpecVersion="1.000000" authoringTool="com.apple.PackageMaker" authoringToolVersion="3.0.4" authoringToolBuild="179">
+    <title>Wireless USB Adapter Driver</title>
+    <options customize="never" allow-external-scripts="no" rootVolumeOnly="true"/>
+    <script>
+function pm_choice0_selected() {
+  result = true;
+  result = result &amp;&amp; (my.target.systemVersion &amp;&amp; /* >= */ system.compareVersions(my.target.systemVersion.ProductVersion, '10.4.0') >= 0);
+  result = result &amp;&amp; (my.target.systemVersion &amp;&amp; /* &lt; */ system.compareVersions(my.target.systemVersion.ProductVersion, '10.5.0') &lt; 0);
+  return result;
+}
+
+
+function pm_choice0_enabled() {
+  result = true;
+  result = result &amp;&amp; (my.target.systemVersion &amp;&amp; /* >= */ system.compareVersions(my.target.systemVersion.ProductVersion, '10.4.0') >= 0);
+  result = result &amp;&amp; (my.target.systemVersion &amp;&amp; /* &lt; */ system.compareVersions(my.target.systemVersion.ProductVersion, '10.5.0') &lt; 0);
+  return result;
+}
+
+
+function pm_choice1_selected() {
+  result = true;
+  result = result &amp;&amp; (my.target.systemVersion &amp;&amp; /* >= */ system.compareVersions(my.target.systemVersion.ProductVersion, '10.4.0') >= 0);
+  result = result &amp;&amp; (my.target.systemVersion &amp;&amp; /* &lt; */ system.compareVersions(my.target.systemVersion.ProductVersion, '10.5.0') &lt; 0);
+  return result;
+}
+
+
+function pm_choice1_enabled() {
+  result = true;
+  result = result &amp;&amp; (my.target.systemVersion &amp;&amp; /* >= */ system.compareVersions(my.target.systemVersion.ProductVersion, '10.4.0') >= 0);
+  result = result &amp;&amp; (my.target.systemVersion &amp;&amp; /* &lt; */ system.compareVersions(my.target.systemVersion.ProductVersion, '10.5.0') &lt; 0);
+  return result;
+}
+
+
+function pm_choice7_selected() {
+  result = true;
+  result = result &amp;&amp; (my.target.systemVersion &amp;&amp; /* >= */ system.compareVersions(my.target.systemVersion.ProductVersion, '10.4.0') >= 0);
+  result = result &amp;&amp; (my.target.systemVersion &amp;&amp; /* &lt; */ system.compareVersions(my.target.systemVersion.ProductVersion, '10.5.0') &lt; 0);
+  return result;
+}
+
+
+function pm_choice7_enabled() {
+  result = true;
+  result = result &amp;&amp; (my.target.systemVersion &amp;&amp; /* >= */ system.compareVersions(my.target.systemVersion.ProductVersion, '10.4.0') >= 0);
+  result = result &amp;&amp; (my.target.systemVersion &amp;&amp; /* &lt; */ system.compareVersions(my.target.systemVersion.ProductVersion, '10.5.0') &lt; 0);
+  return result;
+}
+
+
+function pm_choice8_selected() {
+  result = true;
+  result = result &amp;&amp; (my.target.systemVersion &amp;&amp; /* >= */ system.compareVersions(my.target.systemVersion.ProductVersion, '10.4.0') >= 0);
+  result = result &amp;&amp; (my.target.systemVersion &amp;&amp; /* &lt; */ system.compareVersions(my.target.systemVersion.ProductVersion, '10.5.0') &lt; 0);
+  return result;
+}
+
+
+function pm_choice8_enabled() {
+  result = true;
+  result = result &amp;&amp; (my.target.systemVersion &amp;&amp; /* >= */ system.compareVersions(my.target.systemVersion.ProductVersion, '10.4.0') >= 0);
+  result = result &amp;&amp; (my.target.systemVersion &amp;&amp; /* &lt; */ system.compareVersions(my.target.systemVersion.ProductVersion, '10.5.0') &lt; 0);
+  return result;
+}
+
+
+function pm_choice9_selected() {
+  result = true;
+  result = result &amp;&amp; (my.target.systemVersion &amp;&amp; /* >= */ system.compareVersions(my.target.systemVersion.ProductVersion, '10.4.0') >= 0);
+  result = result &amp;&amp; (my.target.systemVersion &amp;&amp; /* &lt; */ system.compareVersions(my.target.systemVersion.ProductVersion, '10.5.0') &lt; 0);
+  return result;
+}
+
+
+function pm_choice9_enabled() {
+  result = true;
+  result = result &amp;&amp; (my.target.systemVersion &amp;&amp; /* >= */ system.compareVersions(my.target.systemVersion.ProductVersion, '10.4.0') >= 0);
+  result = result &amp;&amp; (my.target.systemVersion &amp;&amp; /* &lt; */ system.compareVersions(my.target.systemVersion.ProductVersion, '10.5.0') &lt; 0);
+  return result;
+}</script>
+    <welcome file="Welcome"/>
+    <readme file="ReadMe"/>
+    <license file="License"/>
+    <choices-outline>
+        <line choice="choice0"/>
+        <line choice="choice1"/>
+        <line choice="choice7"/>
+        <line choice="choice8"/>
+        <line choice="choice9"/>
+    </choices-outline>
+    <choice id="choice0" title="Utility" selected="pm_choice0_selected()" enabled="pm_choice0_enabled()">
+        <pkg-ref id="com.WirelessUtility.pkg"/>
+    </choice>
+    <choice id="choice1" title="StartUP" selected="pm_choice1_selected()" enabled="pm_choice1_enabled()">
+        <pkg-ref id="com.WirelessStartUp.pkg"/>
+    </choice>
+    <choice id="choice7" title="RTL8192CU" selected="pm_choice7_selected()" enabled="pm_choice7_enabled()">
+        <pkg-ref id="com. WirelessDriverCU.pkg"/>
+    </choice>
+    <choice id="choice8" title="RTL8192SU" selected="pm_choice8_selected()" enabled="pm_choice8_enabled()">
+        <pkg-ref id="com. WirelessDriverSU.pkg"/>
+    </choice>
+    <choice id="choice9" title="RTL8188EU" selected="pm_choice9_selected()" enabled="pm_choice9_enabled()">
+        <pkg-ref id="com. WirelessDriverEU.pkg"/>
+    </choice>
+    <pkg-ref id="com.WirelessUtility.pkg" installKBytes="4076" version="1" auth="Root">file:./Contents/Packages/wirelessNetworkUtility.pkg</pkg-ref>
+    <pkg-ref id="com.WirelessStartUp.pkg" installKBytes="4" version="1" auth="Root">file:./Contents/Packages/wlan.pkg</pkg-ref>
+    <pkg-ref id="com. WirelessDriverCU.pkg" installKBytes="2688" version="1" auth="Root" onConclusion="RequireRestart">file:./Contents/Packages/rtl8192cut.pkg</pkg-ref>
+    <pkg-ref id="com. WirelessDriverSU.pkg" installKBytes="2116" version="1" auth="Root" onConclusion="RequireRestart">file:./Contents/Packages/rtl8192sut.pkg</pkg-ref>
+    <pkg-ref id="com. WirelessDriverEU.pkg" installKBytes="3912" version="1" auth="Root" onConclusion="RequireRestart">file:./Contents/Packages/rtl8188eut.pkg</pkg-ref>
+</installer-script>

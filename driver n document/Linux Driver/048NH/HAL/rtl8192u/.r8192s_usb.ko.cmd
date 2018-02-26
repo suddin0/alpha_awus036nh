@@ -1,0 +1,1 @@
+cmd_/root/rtl8192su_linux_2.6.0001.0602.2009/HAL/rtl8192u/r8192s_usb.ko := ld -m elf_i386 -m elf_i386 -r -o /root/rtl8192su_linux_2.6.0001.0602.2009/HAL/rtl8192u/r8192s_usb.ko /root/rtl8192su_linux_2.6.0001.0602.2009/HAL/rtl8192u/r8192s_usb.o /root/rtl8192su_linux_2.6.0001.0602.2009/HAL/rtl8192u/r8192s_usb.mod.o

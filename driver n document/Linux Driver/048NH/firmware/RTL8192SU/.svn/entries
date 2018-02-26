@@ -1,0 +1,41 @@
+8
+
+dir
+3164
+http://172.21.0.100/svn/CN/CN_SD1_WLAN/trunk/Driver/RTL819x/Linux/firmware/RTL8192SU
+http://172.21.0.100/svn/CN/CN_SD1_WLAN
+
+
+
+2009-03-16T09:11:03.510270Z
+3106
+chaoming_li
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7da16012-d426-0410-b605-a9a2c62ec464
+
+rtl8192sfw.bin
+file
+
+
+
+
+2009-03-20T09:15:18.229983Z
+68533bf8078a9e00966a78c9f2da4b9b
+2009-03-16T09:11:03.510270Z
+3106
+chaoming_li
+has-props
+

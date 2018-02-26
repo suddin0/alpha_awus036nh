@@ -1,0 +1,140 @@
+/*****************************************************************************
+ *	Copyright(c) 2010,  RealTeK Technology Inc. All Right Reserved.
+ *  
+ *	Realtek RTL8192C PCI-E 802.11B/G/N 300M Wireless NIC Release Note. 
+ *	
+ *	Description:	
+ *					N.VVVV.DDDD.YYYY
+ *					N		-	NDIS number
+ *					VVVV	-	Version	1001	-->
+ *					DDDD	-	Data	10/19	-->
+ *					YYYY	-	Year	2007	-->	
+ * 
+ *****************************************************************************/
+
+
+############################################################################
+	Version:		
+	1000.0.0224.2010
+	
+	Reason:			
+	1. Formal Release
+	
+	
+############################################################################
+	Version:		
+	1001.0.0224.2010
+	
+	Reason:			
+	1. Fix 92CU uplink issue
+	
+	
+############################################################################
+	Version:		
+	1002.0.0311.2010
+	
+	Reason:			
+	1. Add VWifi feature
+	2. Fix Adhoc unstable
+	3. Improve throughput
+############################################################################
+	Version:		
+	1003.0.0326.2010
+	
+	Reason:			
+	1. Fix vwifi beacon issue.
+	2. Add WHQL related feature.
+
+	Version:		
+	1003.1.0402.2010
+	
+	Reason:		
+	1. Add HW WPS function.	
+
+############################################################################
+	Version:		
+	1004.0.0507.2010
+	
+	Reason:			
+	1. Improve performance with 8196B AP
+	2. Support 2X2 NIC
+	3. Prevent illegal TKIP packet length isue.	
+
+############################################################################
+	Version:		
+	1005.0.0603.2010
+	
+	Reason:			
+	1. Modify adapter halt process.
+	2. Modify LED behavior.
+	3. Improve connection quality with iPod
+	
+############################################################################
+	Version:		
+	1006.0.0614.2010
+	
+	Reason:			
+	1. Improve connection quality with iPod.
+
+############################################################################
+	Version:		
+	1007.0.0720.2010
+	
+	Reason:			
+	1. BT3.0+HS support.
+
+############################################################################
+	Version:		
+	1008.0.0806.2010
+	
+	Reason:			
+	1. WPS external registrar configure AP function.
+	2. Handle the case of unplugging USB flash disk when WLAN NIC is
+	   operating.
+
+############################################################################
+	Version:		
+	1009.0.0903.2010
+	
+	Reason:			
+	1. Support CU selective suspend.
+	2. Fix WPS error.
+	3. Improve Rf initialzie sequence.
+	
+############################################################################
+	Version:		
+	1010.0.0917.2010
+	
+	Reason:			
+	1. Improve CU selective suspend power save.
+	2. Add some PID for customers.
+	
+############################################################################
+	Version:		
+	1011.0.1110.2010
+	
+	Reason:			
+	1. Fine tune CU selective suspend sequence.
+	2. Add some VID/PID for customers.
+	3. Support 8188RU.
+	4. Update Wifi direct support.
+	5. Improve slim combo support. 
+	6. Support B/G mode recognize by PID.
+	
+############################################################################
+	Version:		
+	1012.0.1231.2010
+	
+	Reason:
+	1. Fix Wifi direct connect fail.
+	2. Improve BT reliabiilty.
+	3. Customized performance improvement.
+	4. Support WPS button under selective suspend.
+	5. Improve CPU utilization.
+	6. Support customerize ability.
+	
+	1012.1.0131.2011
+	
+	Reason:
+	1. Support customerize inf.
+	2. Support China mobile request.
